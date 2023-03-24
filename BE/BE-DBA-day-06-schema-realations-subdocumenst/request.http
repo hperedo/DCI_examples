@@ -1,0 +1,83 @@
+@baseUrl = http://localhost:5000
+### GET Users #########################
+GET {{baseUrl}}/users
+
+###  Create User ##########################
+POST {{baseUrl}}/users
+Content-Type: application/json
+
+{
+"username":"juja",
+"email": "juja@gmail.com",
+"mainAd" :{
+     "city":"shiraz",
+     "country":"iran",
+     "zip":26466
+}
+
+
+
+}
+
+
+###
+ # Delete a User  ##############################
+
+DELETE {{baseUrl}}/users/63f25b8ecd390fa5634c37bf
+
+####
+
+# delete all the users
+
+DELETE {{baseUrl}}/users/
+
+###
+# GET the questions##########################################
+
+GET http://localhost:5000/questions
+
+###
+# create new question ########################################
+POST http://localhost:5000/questions/
+Content-Type: application/json
+
+{
+"author" : "63f34f2b8213a857f72de019",
+"title"  : "i am tired",
+"content": "can i have a coffe?",
+"category": "general",
+"type": "external"
+
+}
+
+
+### 
+
+# delete a question #########################################
+DELETE  http://localhost:5000/questions/63ece086ed7050e9e2464ff4
+
+###
+
+# delte all UESERS ###################
+
+DELETE {{baseUrl}}/users
+
+
+
+###
+#  update a question ########################################
+PUT http://localhost:5000/questions/63ece9d3385bcaee5060a487
+Content-Type: application/json
+
+{
+
+"author" : "63f25d191dd4aeff25d88e1d",
+"title"  : "tigers",
+"content": "do dogs love dogs ?",
+"category": "animals",
+"type": "internal"
+
+}
+###
+
+DELETE {{baseUrl}}/questions

@@ -1,0 +1,11 @@
+POST http://localhost:5000/api/users
+Content-Type: application/json
+apikey: FBW05OHA
+
+{
+    "name": "Deuani, surname",
+    "email": "zzz@abc.abc",
+    "password": "00",
+     "age": 30,
+    "married": true
+}

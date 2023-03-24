@@ -1,0 +1,31 @@
+POST http://localhost:5000/api/register
+Content-Type: application/json
+
+{
+
+    "username":"mylo06",
+    "password":"cool",
+    "role":"admin"
+}
+
+###
+
+POST http://localhost:5000/api/login
+Content-Type: application/json
+
+{
+
+    "username":"mylo06",
+    "password":"cool"
+}
+
+
+### get alll users
+GET http://localhost:5000/api/users/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZmYWFkYjQ2MTViZTc1NWRjNzJlNTciLCJpYXQiOjE2Nzc3NTM2MDgsImV4cCI6MTY3Nzc1MzY2OH0.Eu1MI9EsIhd56oEvzyXt0QV5hbhxw4IRBQ3FnvQuozI
+###
+
+
+//////////deleting all the users///////////////
+
+DELETE http://localhost:5000/api/users

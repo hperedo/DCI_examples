@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 10rem);
+        grid-template-rows: repeat(3, 10rem);
+        border: 5px solid tomato;
+        gap: 1rem;
+        grid-template-areas: "cat cat cat"
+                            "sidebar main main"
+                            "sidebar footer footer"
+    }
+    .box {
+        /* width: 7rem;
+        height: 7rem; */
+        background-color: orange;
+    }
+
+    .first {
+        /* grid-column: 1 / 3;
+        grid-row: 1 / 3;    */
+        grid-area: cat;
+    }
+    .second {
+        grid-area: sidebar;
+    }
+    .fourth {
+        grid-area: main;
+    }
+    .ninth {
+        grid-area: footer;
+    }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="box first">First</div>
+      <div class="box second">Second</div>
+      <div class="box thrid">Third</div>
+      <div class="box fourth">Fourth</div>
+      <div class="box">Fifth</div>
+      <div class="box">Sixth</div>
+      <div class="box">Seventh</div>
+      <div class="box">Eigth</div>
+      <div class="box ninth">Ninth</div>
+    </body>
+</html>

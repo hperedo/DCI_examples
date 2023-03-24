@@ -1,0 +1,10 @@
+## Send email 
+POST http://localhost:5000/send
+Content-Type: application/json
+
+{
+    "name": "Mostafa",
+    "email": "ggg@ggg.ggg",
+    "subject": "Testing",
+    "message": "This is just a testing message from nodejs server."
+}

@@ -1,0 +1,36 @@
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: solid 2px white;
+    
+
+img{
+    border-radius: 50%;
+}
+
+ul{
+
+    display: flex;
+    li{
+
+        margin: 0 2rem;
+        list-style: none;
+    }
+
+    a{
+
+        color: white;
+        text-decoration: none;
+        &.active{
+
+            color: red;
+        }
+    }
+}
+
+}

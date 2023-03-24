@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      article p:last-of-type {
+        color: blue;
+      }
+      article li:nth-of-type(odd) {
+        color: blue;
+      }
+
+      a:visited {
+        color: red;
+      }
+      a:hover,
+      a:focus {
+        color: green;
+        outline-color: green;
+        outline-offset: 3px;
+      }
+      a:active {
+        color: brown;
+      }
+      em {
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <p>
+        <em>Something ipsum</em> dolor sit amet consectetur adipisicing elit.
+        Consequuntur, quia.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+        aliquam!
+      </p>
+      <a href="http://google.com">Google</a>
+      <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Similique, explicabo ipsum?</li>
+        <li>Eius, quae error?</li>
+        <li>Obcaecati, commodi sapiente!</li>
+        <li>Sed, vel quo.</li>
+      </ul>
+    </article>
+  </body>
+</html>
+
+<!-- Pseudo-classes: A CSS pseudo-class is a keyword added to a selector that specifies a 
+    special state of the selected element(s). For example, :hover can be used to change a 
+    button's color when the user's pointer hovers over it.  -->

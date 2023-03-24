@@ -1,0 +1,38 @@
+###
+POST http://localhost:5000/api/v1/users/register
+Content-Type: application/json
+
+{
+    "email":"Humberto@gamil.com",
+    "password":"12345678",
+    "name": "humberto"
+}
+
+###
+POST http://localhost:5000/api/v1/users/login
+Content-Type: application/json
+
+{
+    "email":"jay2@gamil.com",
+    "password":"12345678",
+    "name": "jay2"
+    
+}
+
+###
+
+POST http://localhost:5000/api/v1/messages
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDljZjlkMDI0NmY5NTJlZmE0YWE4MSIsImlhdCI6MTY3ODM3NDI1MywiZXhwIjoxNjc4Mzc0ODUzfQ.IzCRKnIN3Mk83V1l1-JoWpJRqXLcgazUur0yxNhAwP0
+
+{
+    "title":"elephants",
+    "content":"elephants are small creatures!!"
+    
+    
+}
+
+###
+
+DELETE http://localhost:5000/api/v1/messages/6412dcd4068ad5a43c1aae2e
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MTJkYzY1MDY4YWQ1YTQzYzFhYWUyOCIsImlhdCI6MTY3ODk2OTQ0MCwiZXhwIjoxNjc4OTcwMDQwfQ.calUCkyl8didQpYCwbzblxumknH_unzaWZLpmwru0gM

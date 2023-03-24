@@ -1,0 +1,68 @@
+body {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr 2fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "main main asideOne"
+    "asideTwo section  asideOne"
+    "footer footer footer";
+}
+header,
+nav,
+aside,
+main,
+section,
+footer {
+  border-radius: 10px;
+  padding: 10px;
+}
+header {
+  background-color: bisque;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 10px;
+  grid-area: header;
+}
+nav {
+  background-color: rgb(206, 182, 148);
+  flex-basis: 50%;
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+main {
+  background-color: rgb(234, 172, 86);
+  grid-area: main;
+}
+aside {
+  background-color: rgb(106, 241, 131);
+}
+.one {
+  grid-area: asideOne;
+}
+.two {
+  grid-area: asideTwo;
+}
+section {
+  background-color: rgb(204, 75, 216);
+  grid-area: section;
+}
+footer {
+  background-color: rgb(219, 211, 220);
+  grid-area: footer;
+}

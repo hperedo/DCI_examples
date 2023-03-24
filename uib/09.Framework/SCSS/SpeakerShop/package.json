@@ -1,0 +1,14 @@
+{
+  "name": "speakershop",
+  "version": "1.0.0",
+  "description": "Just like that",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass sassy-css.scss styles.css --no-source-map --watch"
+  },
+  "author": "dci",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.54.4"
+  }
+}

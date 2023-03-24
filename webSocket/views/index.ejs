@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title%></title>
+    <!-- frontend library for socket client -->
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <h1 class="<%= theme%>">
+        <%= title%>
+    </h1>
+    <%= title%>
+    <ul id="res"></ul>
+    <input type="text" name="" id="m">
+    <input type="button" onclick="send()" value="Send">
+    <script>
+        // fetch()// HTTP
+        // create WebSocket(ws) connection to server
+        // const socket = io("http://localhost:5000");
+        // same origin domain
+        const socket = io();
+        // listener for 'welcome message'
+        socket.on('welcome', msg =>{
+            // msg is te message from ws server
+            console.log(msg)
+        })
+
+        socket.on('hello', data =>{
+            console.log(data)
+        })
+        // send something to ws server
+        socket.emit("jay", "my name is jay")
+        socket.on('obj', data =>{
+            console.log(data)
+        })
+        socket.on('counter', n =>{
+            console.log(n)
+            document.getElementById("res").innerHTML = n
+        })
+
+        socket.on("incomming", msg=>{
+            document.getElementById("res").innerHTML = document.getElementById("res").innerHTML + `<li>${msg}</li>`
+        })
+
+        function send(){
+            let value = document.getElementById('m').value;
+            socket.emit("message", value)
+        }
+    </script>
+</body>
+</html>

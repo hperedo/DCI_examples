@@ -1,0 +1,13 @@
+GET http://localhost:5000/login
+
+###
+GET http://localhost:5000/dashboard
+
+###
+GET http://localhost:5000/change
+
+###
+POST http://localhost:5000/dashboard
+
+###
+GET http://localhost:5000/logout

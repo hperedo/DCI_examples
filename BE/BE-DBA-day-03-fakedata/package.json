@@ -1,0 +1,18 @@
+{
+  "name": "be-dba-day-03-fakedata",
+  "version": "1.0.0",
+  "description": "Just to generate fake data, store in MongoDB",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "mongoose": "^6.9.1"
+  },
+  "type": "module"
+}

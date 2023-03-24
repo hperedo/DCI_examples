@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    ol {
+      list-style: none;
+      counter-reset: item-counter 5;
+    }
+    /* A function is somethin that takes one or more arguments and return a value */
+    li::before {
+      content: counter(item-counter) ") ";
+      counter-increment: item-counter;
+    }
+  </style>
+  <body>
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>item 3</li>
+    </ol>
+  </body>
+</html>
+
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Counter_Styles/Using_CSS_counters -->

@@ -1,0 +1,35 @@
+div {
+  border: 1px solid royalblue;
+}
+
+.inline {
+  display: inline;
+  width: 20%;
+  height: 4rem;
+}
+
+.inline-block {
+  display: inline-block;
+  width: 20%;
+  height: 4rem;
+}
+
+.btn {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 1.8rem;
+  background-color: #813535;
+  color: white;
+  /* padding: 3rem 5rem; */
+  width: 500px;
+  height: 400px;
+  /* padding: top / right / bottom / left */
+  border-radius: 10px;
+  margin-right: 4rem;
+}
+
+.btn:hover {
+  background-color: yellow;
+  color: black;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      th,
+      table,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      /* table {
+        border-spacing: 30px;
+      } */
+      .orange {
+        background-color: orange;
+      }
+      .purple {
+        background-color: purple;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .yellow th {
+        background-color: bisque;
+      }
+      .blue {
+        background-color: blue;
+      }
+      thead th:nth-of-type(2) {
+        background-color: bisque;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <caption>
+        Family
+      </caption>
+      <colgroup>
+        <col class="blue" />
+        <col class="yellow" />
+        <col span="3" class="orange" />
+        <!-- <col span="3" class="orange" /> -->
+        <!-- <col  class="purple" /> -->
+      </colgroup>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Mother</th>
+          <th>Father</th>
+          <th>Sister</th>
+          <th>Brother</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Firstname</th>
+          <td rowspan="2">maria</td>
+          <td>ben</td>
+          <td>Cell</td>
+          <td>Cell</td>
+        </tr>
+        <tr>
+          <th>second name</th>
+          <td>michaellllllllllllllllllllllllllllllllll</td>
+          <td>Cell</td>
+          <td>Cell</td>
+        </tr>
+        <tr>
+          <th>Lastname</th>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+        </tr>
+      </tbody>
+      <tfoot style="background-color: white">
+        <tr>
+          <td colspan="5">My family is awesome!</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

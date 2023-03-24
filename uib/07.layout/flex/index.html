@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Note: Display flex property will not be inherited by the container's grandchildren. It will just effect its direct children!! */
+      .flex-container {
+        display: flex;
+        /* flex-direction: row;  default 
+        flex-wrap: nowrap default */
+        /* flex-flow is a shortcut property for flex-direction and flex-wrap */
+        flex-flow: row nowrap;
+        /* justify-content: flex-start; default** */
+        border: 4px solid black;
+        justify-content: flex-start;
+        /* if flex-direction is set to row=> justify-content=> x axis align-items=> y axis */
+        align-items: baseline;
+        height: 700px;
+      }
+
+      .flex-item {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        background-color: aqua;
+        border: 2px solid blue;
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+      .first-div {
+        display: flex;
+        align-items: flex-end;
+        width: 500px;
+        height: 500px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        background-color: black;
+      }
+      .second-div {
+        display: flex;
+        align-items: flex-end;
+        width: 500px;
+        height: 200px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        background-color: red;
+      }
+      .purple {
+        background-color: purple;
+      }
+      .orange {
+        background-color: orange;
+      }
+      .tomato {
+        background-color: tomato;
+      }
+      .grey {
+        background-color: grey;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .last {
+        order: 10000;
+      }
+      .seventh {
+        order: 100;
+      }
+      .sixth {
+        order: 1;
+      }
+      .changing-more {
+        flex-grow: 4;
+        flex-shrink: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item seventh">A</div>
+      <div class="flex-item changing-more">B</div>
+      <div class="flex-item">C</div>
+      <div class="flex-item last">D</div>
+      <div class="flex-item">E</div>
+      <div class="flex-item">F</div>
+      <div class="flex-item sixth">G</div>
+      <div class="flex-item">H</div>
+    </div>
+
+    <!-- <div class="flex-container">
+         <div class="flex-item purple">1</div>
+        <div class="flex-item orange">2</div>
+        <div class="flex-item tomato">3</div>
+        <div class="flex-item yellow">4</div>
+        <div class="flex-item grey">5</div> 
+      </div>  -->
+
+    <!-- <div class="first-div">First Div</div>
+      <div class="second-div">Second Div</div>-->
+  </body>
+</html>

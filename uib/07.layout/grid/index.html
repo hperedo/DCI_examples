@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid-container {
+        display: grid;
+        width: 80%;
+        height: 100px;
+        gap: 2px;
+        /* grid-template-columns: 25% auto 1fr 1fr 1fr; */
+        grid-template-columns: 25% auto repeat(3, 1fr);
+        /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+        /* grid-template-rows: repeat(5, 1fr); */
+        grid-template-rows: 2fr repeat(3, 1fr) 2fr;
+
+        border: 10px solid red;
+      }
+      .items {
+        background-color: purple;
+      }
+      .pink-items {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <img src="" alt="I'm an img" width="100px" height="100px" />
+    <div>I'm a div</div> -->
+    <div class="grid-container">
+      <div class="items">1</div>
+      <div style="overflow: scroll" class="items">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          rerum labore cupiditate officia fuga odio ut vero maiores culpa porro
+          animi a molestias, quas possimus fugiat voluptates quia at beatae,
+          accusantium dignissimos doloribus repellendus. Exercitationem dolores
+          blanditiis, sequi eius commodi aliquam nobis, quaerat perspiciatis
+          excepturi tempora delectus nemo expedita amet.
+        </p>
+      </div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+      <div class="items">5</div>
+      <div class="pink-items" style="background-color: pink"></div>
+      <div class="pink-items"></div>
+      <div class="pink-items"></div>
+      <div class="pink-items"></div>
+      <div class="pink-items"></div>
+      <div class="pink-items"></div>
+      <div class="pink-items"></div>
+      <div class="pink-items"></div>
+      <div class="pink-items"></div>
+      <div class="pink-items"></div>
+      <div class="pink-items"></div>
+      <div class="pink-items"></div>
+      <div class="pink-items"></div>
+      <div class="pink-items"></div>
+      <div class="pink-items"></div>
+      <div class="pink-items"></div>
+      <div class="pink-items"></div>
+      <div class="pink-items"></div>
+      <div class="pink-items"></div>
+      <div class="pink-items"></div>
+    </div>
+    <!-- <div>I'm also block level element</div>
+    <span>I'm a span</span> -->
+  </body>
+</html>

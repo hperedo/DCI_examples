@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100vh;
+  font-family: Arial;
+  gap: 1.5rem;
+}
+
+section.left {
+  background-image: url(/src/images/pebbles.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  font-size: 2rem;
+}
+
+section.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  color: rgb(21, 19, 19);
+
+  p {
+    color: rgb(157, 148, 148);
+  }
+}

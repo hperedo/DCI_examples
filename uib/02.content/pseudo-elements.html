@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ::selection {
+        background-color: tomato;
+      }
+      p::first-letter {
+        font-size: 136%;
+        font-weight: bold;
+      }
+      p::first-line {
+        color: orange;
+      }
+      P::after {
+        content: "#";
+        display: block;
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>Lorem ipsum dolor sit amet.</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae ex
+        soluta repellat. Dolor, amet. Explicabo modi tempora aperiam amet unde
+        commodi ipsum culpa repellendus mollitia, repellat et libero maxime!
+      </p>
+    </article>
+  </body>
+</html>
+
+<!-- Pseudo-elements: A CSS pseudo-element is a keyword added to a selector that 
+  lets you style a specific part of the selected element(s). For example,
+  ::first-line can be used to change the font of the first line of a paragraph.  -->

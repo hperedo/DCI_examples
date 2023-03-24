@@ -1,0 +1,8 @@
+.ChildC{
+    width: 90%;
+    margin: auto;
+    border: 0.5px solid;
+    border-radius: 10px;
+    min-height: 70vh;
+    padding: 1%;
+}

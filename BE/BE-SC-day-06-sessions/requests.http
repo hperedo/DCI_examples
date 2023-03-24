@@ -1,0 +1,17 @@
+# LOGIN
+POST http://localhost:5000/user/login
+Content-Type: application/json
+
+{
+    "username": "mostafa",
+    "password": "12345678"
+}
+
+### 
+# LOGOUT
+GET http://localhost:5000/admin/logout
+
+
+###
+# get Admin page
+GET http://localhost:5000/admin

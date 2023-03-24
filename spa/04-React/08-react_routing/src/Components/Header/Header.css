@@ -1,0 +1,36 @@
+.Header nav{
+    width: 90%;
+    margin: auto;
+    background-color: #2e2e2e;
+    padding: 1%;
+
+}
+
+.Header nav ul{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    
+}
+
+.Header nav li{
+    list-style-type: none;
+    width: 100px;
+    border: 1px solid;
+    color: #e2e2e2;
+    margin-right: 1%;
+    transition: .5s;
+}
+
+.Header li>a{
+    padding: 2%;
+    text-decoration: none;
+    display: block;
+    color: inherit;
+    text-align: center;
+}
+
+.Header li:hover{
+    background-color: #e2e2e2;
+    color: #2e2e2e
+}

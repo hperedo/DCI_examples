@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block, Inline, Inline-block</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Display</h1>
+    <section>
+      <h2>Block</h2>
+      <div class="block">Block!</div>
+      <div class="block">Block!</div>
+      <div class="block">Block!</div>
+      <div class="block">Block!</div>
+      <p style="background-color: blueviolet">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit,
+        porro ratione, architecto inventore facere non asperiores a aliquam
+        voluptas harum sequi doloremque ullam soluta voluptatibus iste
+        voluptates adipisci rem quod ut et. Nulla quisquam, fugit magni animi
+        cumque minima eos nihil eum reprehenderit voluptate! Illum sunt omnis
+        commodi vitae nesciunt!
+      </p>
+
+      <ul>
+        <li>Appears on a new line underneath the preceding element</li>
+        <li>Will be 100% width unless specified otherwise</li>
+        <li><code>main, div, header, footer, ul,p,li</code></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Inline</h2>
+      <div class="inline">Inline!</div>
+      <div class="inline">Inline!</div>
+      <div class="inline">Inline!</div>
+      <div class="inline">Inline!</div>
+      <ul>
+        <li>Does not start on a new line</li>
+        <li>Only takes as much room as necessary</li>
+        <li>Does not respect width and height</li>
+        <li><code>span, em, a, code, img, cite</code></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Inline-Block</h2>
+      <div class="inline-block" style="margin-top: 50px">Inline-block!</div>
+      <div class="inline-block">Inline-block!</div>
+      <div class="inline-block">Inline-block!</div>
+      <div class="inline-block">Inline-block!</div>
+      <ul>
+        <li>Not a default value</li>
+        <li>Middle ground between inline and block</li>
+        <li>Width and height are respected</li>
+      </ul>
+      <a href="#" class="btn">Push Me</a>
+      <a href="#" class="btn">Push Me Too</a>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+# PORT
+PORT=5000
+
+# MongoDb connection string
+# MONGO_USER=FBW05
+# MONGO_PASS=
+# MONGO_URI=cluster0.ro2kvsc.mongodb.net
+MONGO_DB_NAME=demo
+
+# Email
+EMAIL_USER=mostafa.othman@digitalcareerinstitute.org
+EMAIL_PASS=
+

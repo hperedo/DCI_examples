@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        display: grid;
+      }
+      .box {
+        width: 10rem;
+        height: 10rem;
+        background-color: aqua;
+        margin: auto;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        cursor: pointer;
+        transition: all 1s cubic-bezier(0.17, 0.67, 1, 0.32);
+      }
+      .box:hover {
+        /* transform: rotate(-45deg) scale(2); */
+        /* transform: skew(-10deg); */
+        /* transform: translate(2rem, 2rem); */
+        /* transform: perspective(10rem) translateZ(2rem); */
+        /* transform: perspective(10rem) rotateY(20deg);
+        transform-origin: 0 50%; */
+        transform: rotate(-45deg) scale(2);
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, eius.
+    </div>
+  </body>
+</html>
